@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-avancé</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mobile-menu">
+        <span class="material-icons" id="toggler" onclick="toggler()"> menu </span>
+    </div>
+    <div class="menu">
+        <div class="menu-container">
+            <a href="" class="logo">
+                <img src="/images/logo.png" alt="image">
+            </a>
+            <ul class="menu-listing">
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Boutique</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggler() {
+            const icon = document.querySelector("#toggler");
+            const menu = document.querySelector(".menu");
+            console.log("ity ilay menu",menu);
+            if (icon.innerHTML == 'menu') {
+                icon.innerHTML = 'close';
+                menu.style.display = 'block';
+            } else {
+                icon.innerHTML = 'menu';
+                menu.style.display = 'none';
+            }
+        }
+        
+    </script>
+
+    <!-- <h1>Titre fotsiny</h1>
+    <p >Hello everyBody</p>
+    <p >Salama Jiaby e !</p>
+    <div>
+        <p>Mety ve !!</p>
+        <p class="test">Mety ve !!</p>
+    </div>
+    <div class="contenu">
+        
+    </div>
+    <div class="test1">
+
+    </div>
+    <button type="button" class="boutton" onclick={test()}>Boutton</button>
+    <a href="https://www.google.com">Visitez google</a>
+
+
+
+
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+
+    <p>Volume sélectionné : <span id="volumeValue">50</span></p>
+
+    <script>
+        var volumeInput = document.getElementById('volume');
+        var volumeValueSpan = document.getElementById('volumeValue');
+
+        volumeInput.addEventListener('input', function() {
+            volumeValueSpan.textContent = volumeInput.value;
+        });
+    </script> -->
+
+
+    <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
