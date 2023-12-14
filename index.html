@@ -34,13 +34,14 @@
             console.log("ity ilay menu",menu);
             if (icon.innerHTML == 'menu') {
                 icon.innerHTML = 'close';
-                menu.style.display = 'block';
+                menu.style.transform = 'translateY(0%)'
+                // menu.style.display = 'block';
             } else {
                 icon.innerHTML = 'menu';
-                menu.style.display = 'none';
+                menu.style.transform = 'translateY(-100%)'
+                // menu.style.display = 'none';
             }
         }
-        
     </script>
 
     <!-- <h1>Titre fotsiny</h1>

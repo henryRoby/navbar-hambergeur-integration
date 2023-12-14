@@ -64,7 +64,9 @@ body{
 /* Mobile responsivité */
 @media(max-width:900px) {
     .menu{
-        display: none;
+        transform: translateY(-100%);
+        transition: .3s ease;
+        /* display: none; */
         background-color: rgb(77, 77, 76);
         height: 40vh;
     }
@@ -92,9 +94,6 @@ body{
     .logo img{
         width: 100px;
         margin-bottom: 20px;
-    }
-    .menu-visible {
-        display: block;
     }
     .mobile-menu span{
         padding: 40px 10px 10px;
